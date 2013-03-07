@@ -1,10 +1,10 @@
 /*
 Theme Name: United
 Theme URI: http://unitedbikeco.com
-Author: Thad Allender
+Author: Thad Allender (with customization by B. Martin Studio)
 Author URI: http://graphpaperpress.com
 Description: A semantic, HTML5 theme for United Bike Co. with custom post types.
-Version: 1.0.2
+Version: 2.0
 License: GNU General Public License
 License URI: license.txt
 Tags: custom-menu, sticky-post, microformats, rtl-language-support, translation-ready
@@ -1554,3 +1554,7 @@ ul.videos li a:hover { }
     color: #000;
     font-weight: bold;
 }
+
+/* 2013 Homepage 
+-------------------------------------------------------------- */
+
