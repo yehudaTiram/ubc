@@ -45,9 +45,10 @@
 			</hgroup>
 
 			<div id="topnav">
-				<?php wp_nav_menu( 'sort_column=menu_order&menu_class=menu-top&theme_location=top' ); ?>
-				<?php get_search_form(); ?>
 				<?php wp_nav_menu( 'sort_column=menu_order&menu_class=menu-social&theme_location=social' ); ?>
+				<?php get_search_form(); ?>
+				
+				
 			</div><!-- #topnav -->
 			
 			<?php if (is_home())

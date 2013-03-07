@@ -41,7 +41,8 @@ function united_theme_setup() {
 		'main' => __( 'Main Menu', 'united' ),
 		'top' => __( 'Top Right Menu', 'united' ),
 		'social' => __( 'Social Menu', 'united' ),
-		'footer' => __( 'Footer Menu', 'united' ),
+		'footer1' => __( 'Footer Menu One', 'united' ),
+		'footer2' => __( 'Footer Menu Two', 'united' ),
 		'team' => __( 'Team Menu', 'united' ),
 		'products' => __( 'Products Menu', 'united' )
 	) );
