@@ -267,7 +267,7 @@ ul.menu-footer li:last-child { padding: 0 }
 /* Social Menu */
 .menu-social-container {
         position: absolute;
-        top:30px;
+        top:0;
         right: 0;
         width: 120px;
         float: right;
@@ -308,7 +308,7 @@ ul.menu-social li:last-child a { margin-right: 0 }
 #branding #searchform {
     position: absolute;
     top: 23px;
-    right: 126px;
+    right: 0;
     text-align: right;
 }
 #branding #searchform div { margin: 0 }
