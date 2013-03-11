@@ -656,9 +656,16 @@ a:active img[class*="wp-image-"] {
 #site-credits p { font-size: 10px }
 .menu-footer-container {
     float: right;
-    width: 20%;
+    width: 15%;
     text-align: left;
 }
+.menu-footer-container ul {
+	list-style:none;
+	text-transform:uppercase;	
+}
+.menu-footer-container ul a {color: #000;
+}
+
 
 /* =error404
 ----------------------------------------------- */
