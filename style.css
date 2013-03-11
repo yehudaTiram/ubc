@@ -45,8 +45,8 @@ body { background-color: #eaeaea }
 #colophon {
     clear: both;
     display: block;
-    width: 100%;
-    border-top: 5px solid #222;
+
+
 }
 /* Increase the size of the content area for templates without sidebars */
 .full-width #content,
@@ -643,13 +643,21 @@ a:active img[class*="wp-image-"] {
 
 /* =Footer
 ----------------------------------------------- */
-#colophon { padding: 1em 0 0 }
+#footer-wrap {
+	background-color: #EBEBEB;
+	width: 100%;
+	clear:both;
+	border-top: 5px solid #222;
+}
+#colophon { padding: 1em 0 0; width: 950px; margin: 0 auto;
+}
 #site-credits {
     float: left;
     width: 50%;
     color: #999;
     text-transform: uppercase;
     font-size: 10px;
+    clear:both;
 }
 #site-credits a,
 #site-credits a:focus { color: #999 }
@@ -664,6 +672,9 @@ a:active img[class*="wp-image-"] {
 	text-transform:uppercase;	
 }
 .menu-footer-container ul a {color: #000;
+}
+
+footer .widget {width: 24%;clear: none; float:left; margin-bottom: 0;
 }
 
 
