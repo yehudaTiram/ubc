@@ -1164,19 +1164,18 @@ p.comment-form-comment { margin: 0 }
 /* =Home & Product Slideshows
 -------------------------------------------------------------- */
 #hs_wrap {
-    width: 950px;
-    height: 320px;
+    width: 100%;
+
     position: relative;
-    margin-top: 20px;
+    margin-top: 0;
+    clear: both;
 }
 .post-type-archive-products #hs_wrap {
     width: 590px;
     height: 450px;
 }
 #hs {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+	width: 100%;
     z-index: 100;
 }
 /*
@@ -1186,7 +1185,9 @@ p.comment-form-comment { margin: 0 }
     Set to display none, prevents content flash
 */
 #hs .slides_container {
-    width: 950px;
+	width: 100%;
+	min-width: 950px;
+	min-height: 300px;
     overflow: hidden;
     position: relative;
     display: none;
@@ -1202,16 +1203,28 @@ p.comment-form-comment { margin: 0 }
     Set to display block
 */
 #hs .slides_container a {
-    width: 950px;
-    height: 300px;
+    width: 100%;
+
     display: block;
+}
+
+#hs .slides_container a img {
+	width: 100%;
+	height: auto;
+	min-height: 100%;
 }
 .post-type-archive-products #hs .slides_container a {
     width: 590px;
     height: 390px;
 }
 #hs .slides_container a img { display: block }
+
+
+#hs .slides_control {width: 100% !important;
+}
+
 /*
+
     Next/Prev buttons
 */
 #hs .next,
@@ -1593,6 +1606,20 @@ ul.videos li a:hover { }
 
 /* 2013 Homepage 
 -------------------------------------------------------------- */
+
+@media only screen and (min-width: 1200px) {
+  /* rules that only apply for canvases narrower than 1000px */
+  
+  #hs .slides_container {min-height:400px;}
+  
+  }
+
+@media only screen and (min-width: 1400px) {
+  /* rules that only apply for canvases narrower than 1000px */
+  
+  #hs .slides_container {min-height:500px;}
+  
+  }
 
 
 
