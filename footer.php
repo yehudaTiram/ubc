@@ -1,6 +1,9 @@
 	</div><!-- #main -->
-
+	
 	<footer id="colophon" role="contentinfo">
+	<?php if ( ! dynamic_sidebar( 'footer-widget-1' ) ) : ?>
+	<?php endif; // end footer widget area ?>
+	
 			<div id="site-credits">
 				<p><?php printf(__('All content &copy; %1$s by %2$s.','united'),date('Y'),__(get_bloginfo('name'))); ?> | <?php printf( __( 'Site by %1$s', 'united' ), '<a href="http://graphpaperpress.com/" rel="designer">Graph Paper Press</a>' ); ?></p>
 			</div>
