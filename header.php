@@ -50,11 +50,6 @@
 				
 				
 			</div><!-- #topnav -->
-			
-			<?php if (is_home())
-				get_template_part('slideshow');
-			?>
-
 			<nav id="access" role="navigation">
 				<h1 class="section-heading"><?php _e( 'Main menu', 'united' ); ?></h1>
 				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'united' ); ?>"><?php _e( 'Skip to content', 'united' ); ?></a></div>
@@ -63,6 +58,10 @@
 			</nav><!-- #access -->
 	</header><!-- #branding -->
 </div>
+<?php if (is_home())
+	get_template_part('slideshow');
+?>
+
 <div id="page" class="hfeed container">
 	
 
