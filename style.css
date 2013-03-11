@@ -22,7 +22,7 @@ body { background-color: #eaeaea }
     width: 950px;
     height: 112px;
 }
-.home #branding { height: 434px }
+.home #branding { }
 #page {
     display: block;
     margin: 0 auto;
