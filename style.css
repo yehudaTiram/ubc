@@ -20,7 +20,7 @@ body { background-color: #fff; }
 #branding {
     position: relative;
     width: 950px;
-    height: 112px;
+    height: 55px;
 }
 .home #branding { }
 #page {
@@ -130,12 +130,18 @@ h3 {
 	background-color: #fff;
 	width: 100%;
 		border-bottom: 5px solid #222;
-		padding-bottom: 20px;
+		padding: 20px 0;
+		
 	
 }
 header {
 	width: 950px;
 	margin: 0 auto;
+}
+
+header hgroup {
+	float:left;
+	width: 30%;
 }
 
 #site-title a {
@@ -162,7 +168,7 @@ header {
     display: block;
     float: left;
     letter-spacing: 1px;
-    margin: 0 auto 6px;
+    margin: 20px auto 6px;
     width: 70%;
     text-transform: uppercase;
 }
@@ -222,7 +228,7 @@ header {
 }
 #access li:hover > a,
 #access ul ul :hover > a,
-#access a:focus { background: #efefef; }
+#access a:focus { background: #666; }
 #access li:hover > a,
 #access a:focus {
     background: #FEC200; /* Show a solid color for older browsers */
@@ -314,7 +320,7 @@ ul.menu-social li:last-child a { margin-right: 0 }
 -------------------------------------------------------------- */
 #branding #searchform {
     position: absolute;
-    top: 23px;
+    top: 26px;
     right: 0;
     text-align: right;
 }

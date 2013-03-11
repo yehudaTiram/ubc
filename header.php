@@ -46,7 +46,7 @@
 
 			<div id="topnav">
 				<?php wp_nav_menu( 'sort_column=menu_order&menu_class=menu-social&theme_location=social' ); ?>
-				<?php get_search_form(); ?>
+				
 				
 				
 			</div><!-- #topnav -->
@@ -55,7 +55,10 @@
 				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'united' ); ?>"><?php _e( 'Skip to content', 'united' ); ?></a></div>
 
 				<?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
+			<?php get_search_form(); ?>
 			</nav><!-- #access -->
+			
+			
 	</header><!-- #branding -->
 </div>
 <?php if (is_home())
