@@ -22,17 +22,17 @@ Template Name: Homepage 2013
 			  
 			  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			  	<header class="entry-header">
-			  		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'united' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-			  		<?php the_excerpt(); ?>
-			  		<?php if ( 'post' == $post->post_type ) : ?>
-			  		
-			  		<?php endif; ?>
+			  	
+			  	<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'united' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail('310x175'); ?></a>
+			  	
+			  					  		
 			  	</header><!-- .entry-header -->
 			  
 			  	
 			  	<div class="entry-content">
-			  		<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'united' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail('310x175'); ?></a>
-			  		
+			  					<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'united' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			  					<?php the_excerpt(); ?>
+			  					  		
 			  	</div><!-- .entry-content -->
 			  	
 			  
