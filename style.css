@@ -158,17 +158,12 @@ header {
 /* =Menus
 -------------------------------------------------------------- */
 #access {
-    background: #222; /* Show a solid color for older browsers */
-    background: -moz-linear-gradient(#252525, #0a0a0a);
-    background: -o-linear-gradient(#252525, #0a0a0a);
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax */
-    background: -webkit-linear-gradient(#252525, #0a0a0a);
-    clear: both;
+    background: #fff; /* Show a solid color for older browsers */
     display: block;
     float: left;
     letter-spacing: 1px;
     margin: 0 auto 6px;
-    width: 100%;
+    width: 70%;
     text-transform: uppercase;
 }
 #access ul {
@@ -178,7 +173,6 @@ header {
     padding-left: 0;
 }
 #access li {
-    border-right: 1px solid #999;
     float: left;
     position: relative;
 }
@@ -187,12 +181,12 @@ header {
 }
 #access li li { border-right: none }
 #access a {
-    color: #eee;
+    color: #000;
     display: block;
     line-height: 3.333em;
-    min-width: 125px;
-    padding: 0 1.2125em;
+    padding: 0 1em;
     text-decoration: none;
+    font-weight: bold;
 }
 #access li:last-child a {
 		min-width: 128px;
@@ -228,15 +222,11 @@ header {
 }
 #access li:hover > a,
 #access ul ul :hover > a,
-#access a:focus { background: #efefef }
+#access a:focus { background: #efefef; }
 #access li:hover > a,
 #access a:focus {
-    background: #f9f9f9; /* Show a solid color for older browsers */
-    background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
-    background: -o-linear-gradient(#f9f9f9, #e5e5e5);
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
-    background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
-    color: #373737;
+    background: #FEC200; /* Show a solid color for older browsers */
+    color: #fff;
 }
 #access ul li:hover > ul { display: block }
 #access .current_page_item > a,
