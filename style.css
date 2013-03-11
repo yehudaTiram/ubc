@@ -16,7 +16,7 @@ Tags: custom-menu, sticky-post, microformats, rtl-language-support, translation-
 
 /* =Structure
 -------------------------------------------------------------- */
-body { background-color: #eaeaea }
+body { background-color: #fff; }
 #branding {
     position: relative;
     width: 950px;
