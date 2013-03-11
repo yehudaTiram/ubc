@@ -126,6 +126,18 @@ h3 {
 
 /* =Header
 -------------------------------------------------------------- */
+#header-wrap {
+	background-color: #fff;
+	width: 100%;
+		border-bottom: 5px solid #222;
+		padding-bottom: 20px;
+	
+}
+header {
+	width: 950px;
+	margin: 0 auto;
+}
+
 #site-title a {
     text-indent: -999em;
     display: block;
@@ -140,6 +152,8 @@ h3 {
     text-indent: -999em;
     display: none;
 }
+
+
 
 /* =Menus
 -------------------------------------------------------------- */
