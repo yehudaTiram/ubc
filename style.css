@@ -648,6 +648,7 @@ a:active img[class*="wp-image-"] {
 	width: 100%;
 	clear:both;
 	border-top: 5px solid #222;
+	padding-top: 20px;
 }
 #colophon { padding: 1em 0 0; width: 950px; margin: 0 auto;
 }
