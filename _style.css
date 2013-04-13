@@ -314,38 +314,52 @@ ul.menu-footer li {
 ul.menu-top li:last-child,
 ul.menu-footer li:last-child { padding: 0 }
 /* Social Menu */
-#access .menu-social-container {
+.menu-social-container {
     position: absolute;
     top: 0;
     right: 0;
-    width: 9.3em;
+    width: 22em;
 }
 
-#access .menu-social-container a {
-    padding: 0;
+.menu-social-container a {
+    font-size: 4px;
+    padding: 0 !important;
     margin-left: 1.9em;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
 }
 
-#access ul#menu-social > li {
+ul.menu-social {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    float: none
 }
-
-#access ul#menu-social li {
+ul.menu-social li {
     display:inline;
-    font-size: 1.2em;
 }
-
-#access #menu-social a {
-    float: right;
+ul.menu-social li a {
+    text-indent: -999em;
+    float: left;
     margin-right: 4px;
-    display: none
+    width: 16px;
+    height: 16px;
+    background: url(images/social.png) no-repeat 0 0;
 }
+/* Social Menu */
+ul.menu-social li.facebook a { background-position: 0 0 }
+ul.menu-social li.facebook a:hover { background-position: 0 -16px }
+ul.menu-social li.twitter a { background-position: -16px 0 }
+ul.menu-social li.twitter a:hover { background-position: -16px -16px }
+ul.menu-social li.youtube a { background-position: -32px 0 }
+ul.menu-social li.youtube a:hover { background-position: -32px -16px }
+ul.menu-social li.vimeo a { background-position: -48px 0 }
+ul.menu-social li.vimeo a:hover { background-position: -48px -16px }
+ul.menu-social li.apple a { background-position: -64px 0 }
+ul.menu-social li.apple a:hover { background-position: -64px -16px }
+ul.menu-social li.rss a { background-position: -80px 0 }
+ul.menu-social li.rss a:hover { background-position: -80px -16px }
+ul.menu-social li:last-child a { margin-right: 0 }
 
 /* =Search
 -------------------------------------------------------------- */
@@ -1646,7 +1660,6 @@ ul.videos li a:hover { }
   #hs .slides_container {min-height:500px;}
   
   }
-
 
 
 
