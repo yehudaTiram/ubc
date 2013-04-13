@@ -27,7 +27,7 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" />
-<!--[if lt IE 8]><link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/ie.css" type="text/css" media="screen, projection"><![endif]--> 
+<!--[if lt IE 8]><link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/ie.css" type="text/css" media="screen, projection"><![endif]-->
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
@@ -44,21 +44,16 @@
 				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 
-			<div id="topnav">
-				<?php wp_nav_menu( 'sort_column=menu_order&menu_class=menu-social&theme_location=social' ); ?>
-				
-				
-				
-			</div><!-- #topnav -->
 			<nav id="access" role="navigation">
 				<h1 class="section-heading"><?php _e( 'Main menu', 'united' ); ?></h1>
 				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'united' ); ?>"><?php _e( 'Skip to content', 'united' ); ?></a></div>
 
 				<?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
 			<?php get_search_form(); ?>
 			</nav><!-- #access -->
-			
-			
+
+
 	</header><!-- #branding -->
 </div>
 <?php if (is_front_page())
@@ -66,7 +61,7 @@
 ?>
 
 <div id="page" class="hfeed container">
-	
+
 
 
 	<div id="main">
