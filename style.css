@@ -247,9 +247,53 @@ header hgroup {
     text-transform: capitalize;
     top: 3.333em;
     left: 0;
-    width: 188px;
+    width: 800px;
+    height: 400px;
     z-index: 99999;
 }
+
+#access .videos:after{
+  z-index: -1;
+  content:'Bars';
+  position: absolute;
+  top: 5px;
+  right: 0;
+  bottom: 0;
+  left: 10px;
+  font-size: 3em;
+  color: black;//#fdc123;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.9);
+  opacity: 1;
+  width: 150px;
+  height: 150px;
+}
+
+#access .videos {
+  display: block;
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+
+#access .videos a:hover { opacity: 0.1; }
+#access .videos a {
+  width: 150px;
+  height: 150px;
+  background-image: url('./images/grande_glossred_top-150x150.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-size: 3em;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow:hidden;
+  background-color: transparent;
+  border: none;
+}
+
+
 #access ul ul ul {
     left: 100%;
     top: 0;
@@ -264,14 +308,6 @@ header hgroup {
     line-height: 1.4em;
     padding: 10px 10px;
     width: 168px;
-}
-#access li:hover > a,
-#access ul ul :hover > a,
-#access a:focus { background: #666; }
-#access li:hover > a,
-#access a:focus {
-    background: #FEC200; /* Show a solid color for older browsers */
-    color: #fff;
 }
 #access ul li:hover > ul { display: block }
 #access .current_page_item > a,
