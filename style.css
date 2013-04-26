@@ -261,26 +261,29 @@ header hgroup {
     position: relative;
 }
 
+#access .products .sub-menu li:nth-child(6), #access .products .sub-menu .menu-featured {
+    margin-left: 5px
+}
+
 #access .products .sub-menu {
     -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
     -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
     box-shadow: 0 3px 3px rgba(0,0,0,0.2);
     display: none;
-    float: left;
     margin: 0;
     position: absolute;
     text-transform: capitalize;
-    top: 58px;
-    left: 0;
-    width: 700px;
+    top: 60px;
+    left: 10px;
+    width: 660px;
     height: 500px;
     z-index: 9999;
-    background-color: rgb(0,0,0)
+    background-color: rgb(255,255,255)
 }
 
 #access .products:hover > ul { display: block }
 
-#access .products .videos:after{
+#access .products li:after{
   z-index: -1;
   content:'';
   position: absolute;
@@ -297,21 +300,44 @@ header hgroup {
   height: 150px;
 }
 
-#access .products .videos {
+#access .products li {
   display: block;
   position: relative;
   height: 160px;
   width: 160px;
 }
 
-#access .products .videos a:hover, #access .products .videos a:focus { 
-  text-indent: 1px;
+#access .sub-menu .menu-featured a {
+  width: 320px;
+  height: 320px;
+  background-size: 310px 310px;
+  background-image: url('./images/featured-nav.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5px;
+  margin: 0;
+}
+
+#access .sub-menu .menu-featured {
+  width: 320px;
+  height: 320px;
+}
+
+#access .menu-item .menu-featured a:hover, #access .menu-item .menu-featured a:focus { 
+   width: 310px;
+   height: 310px;
+   padding-top: 30%;
+   text-indent: 20px
+}
+
+#access .products li a:hover, #access .products li a:focus { 
+  text-indent: -5px;
   white-space: nowrap;
   overflow: auto;
   font-size: 1.85em;
   color: #ffcc00;
   background:none;
-  padding-top: 55px;
+  padding-top: 30%;
   text-transform: uppercase;
   position: absolute;
   z-index: 99999;
@@ -319,7 +345,7 @@ header hgroup {
   height: 160px;
 }
 
-#access .products .videos a {
+#access .products li a {
   width: 150px;
   height: 150px;
   background-image: url('./images/bars-nav.jpg');
@@ -332,8 +358,36 @@ header hgroup {
   overflow:hidden;
   background-color: transparent;
   border: none;
-  margin: 0 2px;
 }
+
+#access .products .backpack-nav a {
+  background-image: url('./images/backpack-nav.jpg');
+}
+
+#access .products .clothing-nav a {
+  background-image: url('./images/clothing-nav.jpg');
+}
+
+#access .products .complete-nav a {
+  background-image: url('./images/completes-nav.jpg');
+}
+
+#access .products .forks-nav a {
+  background-image: url('./images/forks-nav.jpg');
+}
+
+#access .products .frames-nav a {
+  background-image: url('./images/frames-nav.jpg');
+}
+
+#access .products .parts-nav a {
+  background-image: url('./images/parts-nav.jpg');
+}
+
+#access .products .promo-nav a {
+  background-image: url('./images/parts-nav.jpg');
+}
+
 /*Riders*/
 #access .riders .sub-menu {
     -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -346,7 +400,7 @@ header hgroup {
     text-transform: capitalize;
     top: 58px;
     left: 0;
-    width: 700px;
+    width: 600px;
     height: 500px;
     z-index: 9999;
     background-color: rgb(0,0,0)
@@ -406,8 +460,10 @@ header hgroup {
   overflow:hidden;
   background-color: transparent;
   border: none;
-  margin: 0 2px;
+  margin: 0 ;
+
 }
+
 #access ul ul ul {
     left: 100%;
     top: 0;
@@ -423,6 +479,7 @@ header hgroup {
     padding: 10px 10px;
     width: 168px;
 }
+
 #access ul li:hover > ul { display: block }
 #access .current_page_item > a,
 #access .current_page_ancestor > a { font-weight: bold }
