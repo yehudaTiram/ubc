@@ -237,6 +237,13 @@ header hgroup {
     font-weight: bold;
     height: 75px
 }
+#access li:hover {
+    background-color: rgb(0,0,0)
+}
+#access li:hover a {
+    color: rgb(253, 193, 35);
+    background-color: rgb(0,0,0)
+}
 /*=SubMenus
 -------------------------------------------------------------- */
 #access ul ul {
@@ -261,11 +268,14 @@ header hgroup {
     position: relative;
 }
 
-#access .products .sub-menu li:nth-child(6), #access .products .sub-menu .menu-featured {
+#access .products .sub-menu li:nth-child(6),
+#access .products .sub-menu .menu-featured,
+#access .riders .sub-menu li:nth-child(4n+1)
+{
     margin-left: 5px
 }
 
-#access .products .sub-menu {
+#access .products .sub-menu, #access .riders .sub-menu {
     -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
     -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
     box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -274,7 +284,7 @@ header hgroup {
     position: absolute;
     text-transform: capitalize;
     top: 60px;
-    left: 10px;
+    left: 0;
     width: 660px;
     height: 500px;
     z-index: 9999;
@@ -293,19 +303,13 @@ header hgroup {
   left: 12px;
   padding-top: 25px;
   font-size: 1.75em;
-  color: #fdc123;
+  color: rgb(253, 193, 35);
   text-align: center;
   text-transform: uppercase;
   width: 150px;
   height: 150px;
 }
 
-#access .products li {
-  display: block;
-  position: relative;
-  height: 160px;
-  width: 160px;
-}
 
 #access .sub-menu .menu-featured a {
   width: 320px;
@@ -330,6 +334,13 @@ header hgroup {
    text-indent: 20px
 }
 
+#access .products li {
+  display: block;
+  position: relative;
+  height: 160px;
+  width: 160px;
+}
+
 #access .products li a:hover, #access .products li a:focus { 
   text-indent: -5px;
   white-space: nowrap;
@@ -348,7 +359,6 @@ header hgroup {
 #access .products li a {
   width: 150px;
   height: 150px;
-  background-image: url('./images/bars-nav.jpg');
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -358,6 +368,10 @@ header hgroup {
   overflow:hidden;
   background-color: transparent;
   border: none;
+}
+
+#access .products .bars-nav a {
+  background-image: url('./images/bars-nav.jpg');
 }
 
 #access .products .backpack-nav a {
@@ -389,21 +403,45 @@ header hgroup {
 }
 
 /*Riders*/
-#access .riders .sub-menu {
-    -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-    -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-    display: none;
-    float: left;
-    margin: 0;
-    position: absolute;
-    text-transform: capitalize;
-    top: 58px;
-    left: 0;
-    width: 600px;
-    height: 500px;
-    z-index: 9999;
-    background-color: rgb(0,0,0)
+
+#access .riders .alex-valentino-nav a {
+  background-image: url('./images/alex-valentino-nav.jpg');
+}
+
+#access .riders .christian-rigal-nav a {
+  background-image: url('./images/christian-rigal-nav.jpg');
+}
+
+#access .riders .corey-martinez-nav a {
+  background-image: url('./images/corey-martinez-nav.jpg');
+}
+
+#access .riders .geoff-slattery-nav a {
+  background-image: url('./images/geoff-slattery-nav.jpg');
+}
+
+#access .riders .jimmy-rushmore-nav a {
+  background-image: url('./images/jimmy-rushmore-nav.jpg');
+}
+
+#access .riders .kye-forte-nav a {
+  background-image: url('./images/kye-forte-nav.jpg');
+}
+
+#access .riders .leo-forte-nav a {
+  background-image: url('./images/leo-forte-nav.jpg');
+}
+
+#access .riders .nathan-williams-nav a {
+  background-image: url('./images/nathan-williams-nav.jpg');
+}
+
+#access .riders .family-nav a {
+  background-image: url('./images/family-nav.jpg');
+}
+
+#access .riders .world-nav a {
+  background-image: url('./images/world-nav.jpg');
 }
 
 #access .riders:hover > ul { display: block }
@@ -418,7 +456,7 @@ header hgroup {
   left: 12px;
   padding-top: 25px;
   font-size: 1.75em;
-  color: #fdc123;
+  color: rgb(253, 193, 35);
   text-align: center;
   text-transform: uppercase;
   width: 150px;
@@ -434,7 +472,7 @@ header hgroup {
 
 #access .riders li a:hover, #access .riders li a:focus { 
   text-indent: 1px;
-  white-space: nowrap;
+  white-space: pre-wrap;
   overflow: auto;
   font-size: 1.85em;
   color: #ffcc00;
@@ -450,7 +488,6 @@ header hgroup {
 #access .riders li a {
   width: 150px;
   height: 150px;
-  background-image: url('./images/bars-nav.jpg');
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -989,7 +1026,7 @@ input#searchsubmit { display: none }
 /* =Links
 -------------------------------------------------------------- */
 a {
-    color: #fdc123;
+    color: rgb(253, 193, 35);
     text-decoration: none;
 }
 a:focus,
@@ -1685,7 +1722,7 @@ p.comment-form-comment { margin: 0 }
     color: #fff;
 }
 .teammate:hover h1.entry-title a {
-		color: #fdc123;
+		color: rgb(253, 193, 35);
 }
 .single-team .entry-title { font-size: 18px; }
 ul.bio,
