@@ -57,6 +57,7 @@
 	</header><!-- #branding -->
 </div>
 <?php if (is_front_page())
+	if(function_exists('show_flexslider_rotator')) echo show_flexslider_rotator( 'homepage' );
 	get_template_part('slideshow');
 ?>
 

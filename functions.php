@@ -274,3 +274,14 @@ if( !function_exists( 'united_product_tax_class' ) ) {
   }
 }
 add_filter( 'post_class', 'united_product_tax_class', 10, 3 );
+
+/* Add Responsive Image Slider functionality */
+
+function set_flexslider_hg_rotators( $rotators = array() )
+{
+    $rotators['homepage']         = array( 'size' => 'homepage-rotator', 'heading_tag' => 'h2' );
+    return $rotators;
+}
+add_filter('flexslider_hg_rotators', 'set_flexslider_hg_rotators');
+
+add_image_size( 'homepage-rotator', '1800', '900', true );
