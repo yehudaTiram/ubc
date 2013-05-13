@@ -337,8 +337,8 @@ left: -108px;
 #access .menu-item .menu-featured a:hover, #access .menu-item .menu-featured a:focus { 
    width: 310px;
    height: 310px;
-   padding-top: 40%;
-   text-indent: 20px
+   text-indent: 20px;
+   line-height: 13em
 }
 
 #access .products li {
@@ -355,7 +355,7 @@ left: -108px;
   font-size: 1.85em;
   color: #ffcc00;
   background:none;
-  padding-top: 40%;
+  line-height: 6em;
   text-transform: uppercase;
   position: absolute;
   z-index: 99999;
