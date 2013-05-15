@@ -284,4 +284,10 @@ function set_flexslider_hg_rotators( $rotators = array() )
 }
 add_filter('flexslider_hg_rotators', 'set_flexslider_hg_rotators');
 
-add_image_size( 'homepage-rotator', '1800', '900', true );
+/* Add Image Sizes for homepage */
+
+if ( function_exists( 'add_image_size' ) ) { 
+	add_image_size( 'homepage-rotator', '1800', '900', true );
+	add_image_size( 'hp-large', 470, 510, true );
+	add_image_size( 'hp-med', 470, 250, true ); 
+}
