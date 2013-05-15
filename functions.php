@@ -279,7 +279,7 @@ add_filter( 'post_class', 'united_product_tax_class', 10, 3 );
 
 function set_flexslider_hg_rotators( $rotators = array() )
 {
-    $rotators['homepage']         = array( 'size' => 'homepage-rotator', 'heading_tag' => 'h2' );
+    $rotators['homepage']         = array( 'size' => 'homepage-rotator', 'heading_tag' => 'h2', 'options' => "{slideshowSpeed: 7000, animation: 'slide', direction: 'horizontal', directionNav: true}" );
     return $rotators;
 }
 add_filter('flexslider_hg_rotators', 'set_flexslider_hg_rotators');

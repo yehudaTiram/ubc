@@ -170,7 +170,7 @@ h3 {
 #header-wrap {
 	background-color: #fff;
 	width: 100%;
-		border-bottom: 5px solid #222;
+		border-bottom: 5px solid #000;
 		padding: 20px 0;
 		
 	
@@ -1652,6 +1652,87 @@ p.comment-form-comment { margin: 0 }
 #ss .pagination li a img {
     width: 50px;
     height: 50px;
+}
+
+
+/* Flexslider Slideshow Homepage */
+
+#flexslider_hg_homepage_wrapper{
+  border-bottom:5px solid #000;
+}
+
+div .flexslider{
+  border:none;
+  min-width:950px;
+  margin-bottom:0;
+
+}
+
+.flexslider .flex-viewport{
+    max-height:700px;
+  overflow:hidden;
+}
+
+.flexslider .slides li{
+  max-height: 700px;
+}
+.flexslider .slides img{
+  height:auto;
+}
+
+.flexslider .slide-data{
+top: 50%;
+margin-top:-120px;
+  left:0;
+  width: 100%;
+  background: rgba(255,194,0,0.6);
+  text-align:center;
+  height:200px;
+  color:#000;
+  padding-top:20px;
+  font-size:20px;
+  text-transform:uppercase;
+  opacity:0;
+
+}
+
+div .flexslider:hover .slide-data {
+  opacity:1.0;
+}
+
+.flexslider .slide-data h2{
+  color:#000;
+  text-transform: uppercase;
+  font-size:50px;
+  text-shadow:none;
+  font-weight:bold;
+  width:600px;
+  margin:0 auto;
+  line-height:1.2em;
+  padding-top:35px;
+
+}
+
+.flexslider .slide-data h2 a{
+  color:#000;
+}
+
+.flexslider .flex-direction-nav a {
+  background: transparent url('images/homepage-slideshow-arrows.png') no-repeat 0 0;
+  height:70px;
+  width:60px;
+  top:48%;
+}
+
+.flexslider .flex-direction-nav .flex-next {
+  background-position: -70px 0;
+}
+
+div .flexslider:hover .flex-next {opacity: 1.0; right: 10%;}
+div .flexslider:hover .flex-prev {opacity: 1.0; left: 10%;}
+
+.flexslider .flex-control-nav {
+  bottom:20px;
 }
 
 /* =Video Pages
