@@ -88,6 +88,10 @@ body { background-color: #fff; }
 
 
 }
+
+
+
+
 /* Increase the size of the content area for templates without sidebars */
 .full-width #content,
 .image-attachment #content,
@@ -118,6 +122,10 @@ body { background-color: #fff; }
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.clear{
+  clear:both;
 }
 
 /* =Typography
@@ -1964,6 +1972,12 @@ ul.videos li a:hover { }
 
 /* 2013 Homepage 
 -------------------------------------------------------------- */
+
+#content section {
+  margin-bottom: 20px;
+}
+
+
 
 #hp-posts .page-title {
   text-align: center;

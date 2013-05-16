@@ -70,6 +70,8 @@ Template Name: Homepage 2013
 			  
 			   
 			 <?php endwhile; ?>
+
+			 <div class="clear"></div>
 			
 			</section>
 			
@@ -112,6 +114,10 @@ Template Name: Homepage 2013
 				</div><!-- #<?php echo $level; ?> -->
 				
 				<?php } // end foreach loop ?>
+
+							 <div class="clear"></div>
+
+
 </section>				
 				
 				
@@ -151,6 +157,9 @@ Template Name: Homepage 2013
 						</div><!-- .span-8 -->
 						<?php if ($i == 3) { ?><hr class="space" /><?php $i = 0; } ?>
 					 <?php endforeach ?>
+
+					 			 <div class="clear"></div>
+
 </section>				
 				
 				
