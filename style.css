@@ -2062,15 +2062,26 @@ ul.videos li a:hover { }
 
 /* HP Social Area */
 
+.hp-social{
+  width: 180px;
+  float: left;
+}
+
+.hp-social ul {
+  margin:0;
+  padding:0;
+}
+
 .hp-social li {
   width: 60px;
-  height:80px;
+  height:82px;
   margin-left:10px;
   margin-bottom:10px;
   float:left;
   display: inline;
   background: #000;
   color: #fff;
+  transition: background .2s;
 }
 
 .hp-social li:hover{
@@ -2088,8 +2099,8 @@ ul.videos li a:hover { }
 
 .hp-social .facebook, .hp-social .twitter, .hp-social .youtube, .hp-social .instagram{
   text-align: center;
-  line-height: 4;
-  font-size:1.5em;
+  line-height: 3.5;
+  font-size:1.8em;
 }
 
 
