@@ -4,6 +4,7 @@ function united_js( ) {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('slidesjs', get_bloginfo('template_directory').'/js/slides.min.jquery.js', array('jquery'));
 	wp_enqueue_script('unitedjs', get_bloginfo('template_directory').'/js/united.jquery.js', array('jquery'));
+	wp_enqueue_script('instagram', get_bloginfo('template_directory').'/js/spectragram.js', array('jquery'));
 }
 function united_social_js( ) {
 	wp_enqueue_script('twitter', 'http://platform.twitter.com/widgets.js', '');
@@ -38,6 +39,11 @@ function united_dom_js() {
 			generatePagination: false
 		});
 	});
+
+
+
+
+
 /* ]]> */	
 </script>";
 	echo $doc_ready_script;

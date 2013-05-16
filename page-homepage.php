@@ -159,6 +159,8 @@ Template Name: Homepage 2013
 					 <?php endforeach ?>
 
 <aside>
+	<div class="instagram-widget"></div>
+
 <?php if ( ! dynamic_sidebar( 'hp-widget' ) ) : ?>
 	<?php endif; // end footer widget area ?>
 	<div class="hp-social">

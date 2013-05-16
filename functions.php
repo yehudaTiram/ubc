@@ -119,7 +119,7 @@ function united_widgets_init() {
 		register_sidebar( array (
 		'name' => __( 'Homepage Instagram Widget', 'united' ),
 		'id' => 'hp-widget',
-		'description' => __( 'Homeapge instagram widget area', 'united' ),
+		'description' => __( 'Homepage instagram widget area', 'united' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s instagram-widget">',
 		'after_widget' => "</div>"
 	) );

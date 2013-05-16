@@ -34,6 +34,9 @@
 <script src="<?php bloginfo( 'template_directory' ); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_head(); ?>
+
+
+
 </head>
 
 <body <?php body_class(); ?>>

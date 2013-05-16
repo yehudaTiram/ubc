@@ -29,6 +29,18 @@
 
 	</div>
 
+<script>
+
+jQuery.fn.spectragram.accessData = {
+    accessToken: 'c506e0659ef545a7ba4f62a1531c81b6',
+    clientID: '99acc8f33ca447cba45568f951f2dd06'
+};
+
+$('.instagram-widget').spectragram('getRecentTagged',{
+    query: 'unitedbikeco'
+});
+
+</script>
 
 <?php wp_footer(); ?>
 
