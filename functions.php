@@ -120,8 +120,8 @@ function united_widgets_init() {
 		'name' => __( 'Homepage Instagram Widget', 'united' ),
 		'id' => 'hp-widget',
 		'description' => __( 'Homeapge instagram widget area', 'united' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>"
+		'before_widget' => '<div id="%1$s" class="widget %2$s instagram-widget">',
+		'after_widget' => "</div>"
 	) );
 	
 }

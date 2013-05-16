@@ -158,6 +158,21 @@ Template Name: Homepage 2013
 						<?php if ($i == 3) { ?><hr class="space" /><?php $i = 0; } ?>
 					 <?php endforeach ?>
 
+<aside>
+<?php if ( ! dynamic_sidebar( 'hp-widget' ) ) : ?>
+	<?php endif; // end footer widget area ?>
+	<div class="hp-social">
+		<ul>
+			<li class="facebook"><a href="http://www.facebook.com/unitedbmx">Facebook</a></li>
+			<li class="twitter"><a href="http://twitter.com/#!/united_bmx">Twitter</a></li>
+			<li class="instagram"><a href="#">Instagram</a></li>
+			<li  class="youtube"><a href="http://www.youtube.com/user/unitedbikeco">YouTube</a></li>
+		</ul>	
+	</div>
+
+
+</aside>
+
 					 			 <div class="clear"></div>
 
 </section>				
