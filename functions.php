@@ -115,6 +115,14 @@ function united_widgets_init() {
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	) );
+
+		register_sidebar( array (
+		'name' => __( 'Homepage Instagram Widget', 'united' ),
+		'id' => 'hp-widget',
+		'description' => __( 'Homeapge instagram widget area', 'united' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>"
+	) );
 	
 }
 add_action( 'widgets_init', 'united_widgets_init' );
