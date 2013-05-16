@@ -162,7 +162,7 @@ h3 {
 .page-title {
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
 }
 
 /* =Header
@@ -1964,6 +1964,10 @@ ul.videos li a:hover { }
 
 /* 2013 Homepage 
 -------------------------------------------------------------- */
+
+#hp-posts .page-title {
+  text-align: center;
+}
 
 #hp-posts article{
   float:left;
