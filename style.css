@@ -255,6 +255,8 @@ header hgroup {
     color: rgb(253, 193, 35);
     background-color: rgb(0,0,0)
 }
+
+#menu-social li:hover { background: none }
 /*=SubMenus
 -------------------------------------------------------------- */
 #access ul ul {
