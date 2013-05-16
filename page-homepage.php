@@ -15,15 +15,15 @@ Template Name: Homepage 2013
 			<section id="hp-posts">
 			
 			<h2 class="page-title">What's New</h2>
-			<?php $my_query = new WP_Query('category_name=featured&posts_per_page=3');
+			<?php $my_query = new WP_Query('category_name=featured&posts_per_page=1');
 			 while ($my_query->have_posts()) : $my_query->the_post();
 			 $do_not_duplicate = $post->ID; 
 			 ?>
 			  
-			  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			  	<header class="entry-header">
+			  <article id="post-<?php the_ID(); ?>" <?php post_class('first-child'); ?>>
+			  	<header class="entry-header-large">
 			  	
-			  	<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'united' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail('310x175'); ?></a>
+			  	<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'united' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail('hp-large'); ?></a>
 			  	
 			  					  		
 			  	</header><!-- .entry-header -->
@@ -31,7 +31,34 @@ Template Name: Homepage 2013
 			  	
 			  	<div class="entry-content">
 			  					<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'united' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-			  					<?php the_excerpt(); ?>
+			  					<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'united' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"  class="post-link" ><?php the_excerpt(); ?></a>
+			  					  		
+			  	</div><!-- .entry-content -->
+			  	
+			  
+			  
+			  </article><!-- #post-<?php the_ID(); ?> -->
+			  
+			  
+			  
+			   
+			 <?php endwhile; ?>
+			 <?php $my_query = new WP_Query('category_name=featured&posts_per_page=2&offset=1');
+			 while ($my_query->have_posts()) : $my_query->the_post();
+			 $do_not_duplicate = $post->ID; 
+			 ?>
+			  
+			  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			  	<header class="entry-header-med">
+			  	
+			  	<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'united' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail('hp-med'); ?></a>
+			  	
+			  					  		
+			  	</header><!-- .entry-header -->
+			  
+			  	<div class="entry-content">
+			  					<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'united' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			  					<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'united' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark" class="post-link"><?php the_excerpt(); ?></a>
 			  					  		
 			  	</div><!-- .entry-content -->
 			  	
