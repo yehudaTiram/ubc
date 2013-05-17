@@ -1767,7 +1767,8 @@ body.video {
 /* =Product Page
 -------------------------------------------------------------- */
 .single-products .specs,
-.single-products .geometry {
+.single-products .geometry,
+.single-products .video {
     width: 47%;
     float: left;
     margin-right: 6%;
