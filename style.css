@@ -16,16 +16,16 @@ Tags: custom-menu, sticky-post, microformats, rtl-language-support, translation-
 
 @font-face {
   font-family: 'social';
-  src:url('fonts/icomoon.eot');
-  src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.woff') format('woff'),
-    url('fonts/icomoon.ttf') format('truetype'),
-    url('fonts/icomoon.svg#icomoon') format('svg');
+  src:url('fonts/unitedbikeco-social.eot');
+  src:url('fonts/unitedbikeco-social.eot?#iefix') format('embedded-opentype'),
+    url('fonts/unitedbikeco-social.woff') format('woff'),
+    url('fonts/unitedbikeco-social.ttf') format('truetype'),
+    url('fonts/unitedbikeco-social.svg#unitedbikeco-social') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-.youtube, .twitter, .vimeo, .facebook, .rss, .apple, .instagram {
+.instagram, .youtube, .twitter, .vimeo, .facebook, .rss, .apple, .instagram {
   font-family: 'social';
   speak: none;
   font-style: normal;
@@ -34,6 +34,11 @@ Tags: custom-menu, sticky-post, microformats, rtl-language-support, translation-
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+}
+.instagram:before {
+  content: "\e000";
+  font-size: 0.95em;
+  margin-right: 0.1em;
 }
 .youtube:before {
   content: "\f30e";
@@ -580,7 +585,7 @@ ul.menu-footer li:last-child { padding: 0 }
     position: absolute;
     top: 0;
     right: 0;
-    width: 9.3em;
+    width: 11em;
 }
 
 #access .menu-social-container a {
