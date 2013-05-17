@@ -74,6 +74,7 @@ body { background-color: #fff; }
     float: left;
     margin: 0 -330px 0 0;
     width: 100%;
+    min-height: 600px
 }
 #content { margin: 0 360px 0 0 }
 #main { padding: 20px 0 }
@@ -2146,4 +2147,52 @@ ul.videos li a:hover { }
 footer .facebook-like-box{
   margin-top:20px;
 }
+
+
+/* New Product Categories Page */
+
+#product-categories ul, #taxonomy-archive-type ul {
+  margin:0;
+  padding: 0;
+  list-style: none;
+  display:block;
+  clear:both;
+}
+
+#product-categories li, #taxonomy-archive-type li {
+list-style: none;
+float: left;
+padding: 0;
+margin: 0 5px 0 0;
+height:230px;
+width: 310px;
+text-transform: uppercase;
+font-size: 14px;
+font-weight:bold;
+
+}
+#product-categories li img {
+  height:175px;
+  width:310px;
+}
+
+#product-categories li a{
+  color: #000;
+}
+
+#product-categories li a:hover{
+  color:#FEC300;
+  text-decoration: none;
+}
+
+#taxonomy-archive-type li a{
+  color: #000;
+}
+
+#taxonomy-archive-type li a:hover{
+  color:#FEC300;
+  text-decoration: none;
+}
+
+
 
