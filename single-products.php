@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-		<div id="primary">
+		<div id="primary"   class="full-width">
 			<div id="content" role="main">
 
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -75,5 +75,5 @@
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-<?php get_sidebar('products'); ?>
+
 <?php get_footer(); ?>
