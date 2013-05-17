@@ -1769,9 +1769,9 @@ body.video {
 .single-products .specs,
 .single-products .geometry,
 .single-products .video {
-    width: 47%;
+    width: 465px;
     float: left;
-    margin-right: 6%;
+    margin-right: 10px;
 }
 .single-products .geometry { margin-right: 0 }
 .single-products table {
@@ -1790,9 +1790,14 @@ body.video {
     letter-spacing: 2px;
 }
 .single-products .complete-bikes .geometry {
-		width: 100%;
+		width: 465px;
 		display:block;
-		float:none;
+		float:left;
+}
+
+.single-products .video iframe{
+  width: 425px !important;
+height: 249px  !important;
 }
 
 /* =CPT Archive Page

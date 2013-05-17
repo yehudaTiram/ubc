@@ -39,7 +39,7 @@
 						<?php
 							$meta = $product_metabox->the_meta();
 							if ( isset($meta['products'])) {
-								if ( isset($meta['geometry'])) {
+								if ( isset($meta['products'])) {
 									echo '<div class="specs">';
 								}
 						?>
