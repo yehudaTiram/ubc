@@ -232,7 +232,7 @@ function united_theme_options_notice(){
 	global $current_screen;
 	$theme = get_bloginfo('template_directory');
 	if ( $current_screen->parent_base == 'themes') {
-		if (!is_plugin_active('option-tree/index.php')) {
+		if (!is_plugin_active('option-tree/ot-loader.php')) {
 			echo '<div class="error"><p>You must install the <a href="http://wordpress.org/extend/plugins/option-tree/" target="_blank">Option Tree plugin</a> to use this theme. Refer to the <a href="'.$theme.'/readme.txt" target="_blank">Theme Instructions</a> if you have questions.</p></div>';
 		} // end conditional check
 	} // end on themes page check
