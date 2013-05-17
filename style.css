@@ -66,7 +66,7 @@ body { background-color: #fff; }
 #page {
     display: block;
     margin: 0 auto;
-    width: 950px;
+    width: 960px;
     padding: 20px;
     background-color: #fff;
 }
@@ -2163,7 +2163,7 @@ footer .facebook-like-box{
 list-style: none;
 float: left;
 padding: 0;
-margin: 0 5px 0 0;
+margin: 0 10px 0 0;
 height:230px;
 width: 310px;
 text-transform: uppercase;
@@ -2174,6 +2174,13 @@ font-weight:bold;
 #product-categories li img {
   height:175px;
   width:310px;
+   border: 1px solid #eee; 
+
+
+}
+
+#taxonomy-archive-type li img {
+  border: 1px solid #eee;
 }
 
 #product-categories li a{
