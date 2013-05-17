@@ -2107,6 +2107,7 @@ ul.videos li a:hover { }
   background: #000;
   color: #fff;
   transition: background .2s;
+  overflow: hidden;
 }
 
 .hp-social li:hover{
@@ -2116,16 +2117,23 @@ ul.videos li a:hover { }
 
 .hp-social li a {
   display: block;
- position:absolute;
- 
- left:-9999px;
+width: 2em;
+margin-left: 22px;
+margin-top: 28px;
+letter-spacing: 3px;
+color:#fff;
 
 }
+
+.hp-social li a:hover{
+  text-decoration: none;
+}
+
 
 .hp-social .facebook, .hp-social .twitter, .hp-social .youtube, .hp-social .instagram{
   text-align: center;
   line-height: 3.5;
-  font-size:1.8em;
+  font-size:2em;
 }
 
 /* HP Instagram Widget */
