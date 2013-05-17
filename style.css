@@ -25,7 +25,7 @@ Tags: custom-menu, sticky-post, microformats, rtl-language-support, translation-
   font-style: normal;
 }
 
-.instagram, .youtube, .twitter, .vimeo, .facebook, .rss, .apple, .instagram {
+.instagram a, .youtube a, .twitter a, .vimeo a, .facebook a, .rss a, .apple a, .instagram a {
   font-family: 'social';
   speak: none;
   font-style: normal;
@@ -35,28 +35,34 @@ Tags: custom-menu, sticky-post, microformats, rtl-language-support, translation-
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-.instagram:before {
+.instagram a:before {
   content: "\e000";
   font-size: 0.95em;
-  margin-right: 0.1em;
+  padding-right: 1em
 }
-.youtube:before {
+.youtube a:before {
   content: "\f30e";
+  padding-right: 1em
 }
-.twitter:before {
+.twitter a:before {
   content: "\f322";
+  padding-right: 1em
 }
-.vimeo:before {
+.vimeo a:before {
   content: "\f324";
+  padding-right: 1em
 }
-.facebook:before {
+.facebook a:before {
   content: "\f09a";
+  padding-right: 1em
 }
-.rss:before {
+.rss a:before {
   content: "\f09e";
+  padding-right: 1em
 }
-.apple:before {
+.apple a:before {
   content: "\f344";
+  padding-right: 1em
 }
 
 /* =Structure
@@ -262,7 +268,47 @@ header hgroup {
     background-color: rgb(0,0,0)
 }
 
-#menu-social li:hover { background: none }
+
+
+/* Social Menu */
+#access .menu-social-container {
+    position: absolute;
+    top: 0;
+    right: -1.3em;
+    width: 16em;
+}
+
+#access .menu-social-container a {
+    padding: 0;
+    margin-left: 0.1em;
+    text-indent: 1%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: normal
+}
+
+#access ul#menu-social > li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: none
+}
+
+#access ul#menu-social li {
+    display:inline;
+    font-size: 1.25em;
+    height: auto
+}
+
+#access #menu-social a {
+    float: left;
+    display: block;
+    width: 1.4em;
+    height: auto;
+    line-height: 1
+}
+
+#access #menu-social li a:hover { background: none }
 /*=SubMenus
 -------------------------------------------------------------- */
 #access ul ul {
@@ -580,39 +626,6 @@ ul.menu-footer li {
 }
 ul.menu-top li:last-child,
 ul.menu-footer li:last-child { padding: 0 }
-/* Social Menu */
-#access .menu-social-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 11em;
-}
-
-#access .menu-social-container a {
-    padding: 0;
-    margin-left: 1.9em;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-#access ul#menu-social > li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: none
-}
-
-#access ul#menu-social li {
-    display:inline;
-    font-size: 1.2em;
-}
-
-#access #menu-social a {
-    float: right;
-    margin-right: 4px;
-    display: none
-}
 
 /* =Search
 -------------------------------------------------------------- */
