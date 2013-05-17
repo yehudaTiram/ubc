@@ -1566,8 +1566,8 @@ p.comment-form-comment { margin: 0 }
 /* =Team Slideshows
 -------------------------------------------------------------- */
 #ss_wrap {
-    width: 590px;
-    height: 480px;
+    width: 950px;
+    height: 580px;
     position: relative;
 }
 /*
@@ -1577,7 +1577,7 @@ p.comment-form-comment { margin: 0 }
     Set to display none, prevents content flash
 */
 #ss .slides_container {
-    width: 590px;
+    width: 950px;
     overflow: hidden;
     position: relative;
     display: none;
@@ -1591,8 +1591,8 @@ p.comment-form-comment { margin: 0 }
     Set to display block
 */
 #ss .slides_container a {
-    width: 590px;
-    height: 390px;
+    width: 950px;
+    height: 480px;
     display: block;
 }
 /*
@@ -1604,7 +1604,7 @@ p.comment-form-comment { margin: 0 }
     top: 0px;
     left: -53px;
     width: 50%;
-    height: 390px;
+    height: 420px;
     display: block;
     z-index: 101;
     text-indent: -999em;
@@ -1625,7 +1625,7 @@ p.comment-form-comment { margin: 0 }
     opacity: 1;
 }
 #ss .next {
-    left: 295px;
+    left: 465px;
     background: url(images/slideshow/arrow-right.png) no-repeat 100% 50%;
 }
 /*
@@ -1634,7 +1634,7 @@ p.comment-form-comment { margin: 0 }
 #ss .pagination {
     margin: 0 0 40px;
     padding: 5px 8px;
-    width: 574px;
+    width: 935px;
     min-height: 63px;
     display: block;
     background: url(images/stripe.png) repeat;

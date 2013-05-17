@@ -13,7 +13,7 @@
 					
 					<div class="entry-content">
 				
-						<?php united_slideshow('medium'); ?>
+						<?php united_slideshow('large'); ?>
 						
 						<?php the_content(); ?>
 						
@@ -49,6 +49,26 @@
 						<?php if ( isset($meta['geometry'])) { ?>
 						<div class="geometry">
 						<table id="geometry">
+							<tr>
+								<th colspan="2"><?php if ( has_term( 'complete-bikes', 'type', $post->ID ) ) { echo 'Specs'; } else { echo 'Geometry'; } ?></th>
+								
+							</tr>		
+							<?php
+								// the product spec
+								foreach ($meta['geometry'] as $detail) {
+									echo '<tr>';
+									echo '<td>'.$detail['product_geometry_title'].'</td>';
+									echo '<td>'.$detail['product_geometry_value'].'</td>';
+									echo '</tr>';
+								}
+							?>
+						</table>
+						</div>
+						<?php } // only show geometry section if geometry value is set ?>
+
+						<?php if ( isset($meta['video'])) { ?>
+						<div class="video">
+						<table id="video">
 							<tr>
 								<th colspan="2"><?php if ( has_term( 'complete-bikes', 'type', $post->ID ) ) { echo 'Specs'; } else { echo 'Geometry'; } ?></th>
 								
