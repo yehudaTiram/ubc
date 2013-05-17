@@ -2075,7 +2075,7 @@ ul.videos li a:hover { }
 /* HP Social Area */
 
 .hp-social{
-  width: 180px;
+  width: 140px;
   float: left;
 }
 
@@ -2114,6 +2114,33 @@ ul.videos li a:hover { }
   line-height: 3.5;
   font-size:1.8em;
 }
+
+/* HP Instagram Widget */
+
+.instagram-widget{
+  float:left;
+  width: 170px;
+height: 175px;
+overflow:hidden;
+}
+
+div #masonryContainer, div .masonryItem {
+  padding:0;
+  margin:0;
+  border-radius:0;
+  width:175px;
+  border: none;
+    -moz-box-shadow:    0px 0px 0px 0px #fff;
+  -webkit-box-shadow: 0px 0px 0px 0px #fff;
+  box-shadow:         0px 0px 0px 0px #fff;
+
+}
+
+div .masonryItem img{
+width:175px;
+height:auto;
+}
+
 
 /* Footer Newsletter Widget */
 

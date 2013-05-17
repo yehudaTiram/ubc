@@ -159,7 +159,10 @@ Template Name: Homepage 2013
 					 <?php endforeach ?>
 
 <aside>
-	<div class="instagram-widget"></div>
+	<div class="instagram-widget">
+	<?php echo do_shortcode("[simply_instagram endpoints='users' type='recent-media' size='thumbnail' display='1']"); ?>	
+	</div>
+
 
 <?php if ( ! dynamic_sidebar( 'hp-widget' ) ) : ?>
 	<?php endif; // end footer widget area ?>
