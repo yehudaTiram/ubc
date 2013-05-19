@@ -1813,6 +1813,17 @@ body.video {
 height: 249px  !important;
 }
 
+.single-products .related-products { clear: both; display: block; width: 100%; }
+.single-products .related-product-wrapper { float: left; width: 33.3333333333%; }
+.single-products .related-products a { display: block; text-decoration: none; padding: 0.5em }
+.single-products .related-products a span { width: 100%; color: black; text-decoration: none; font-weight: bold; font-size: 1.3em; text-transform: uppercase }
+.single-products .related-products a:hover span { color: rgb(253, 193, 35); }
+.single-products .related-products img{ width: 100%; height: auto; border: 1px solid black }
+
+
+
+
+
 /* =CPT Archive Page
 -------------------------------------------------------------- */
 .group { margin-bottom: 2em }
