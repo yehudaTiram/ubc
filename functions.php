@@ -55,9 +55,8 @@ function united_theme_setup() {
 	/**
 	 * Add support for custom backgrounds
 	 */
-	add_custom_background();
-
-} // united_theme_setup()
+	add_theme_support('custom-background');
+	} // united_theme_setup()
 
 /**
  * Setup a default path to our theme includes folder
