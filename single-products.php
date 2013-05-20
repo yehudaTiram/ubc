@@ -125,7 +125,7 @@
                         $my_query->the_post();
                         echo '<div class="related-product-wrapper">';
                         echo '<a href="'.get_permalink().'" rel="bookmark" class="product-related">';
-                        the_post_thumbnail();
+                        the_post_thumbnail('310x175');
                         the_title('<span class="product-related-title">','</span>');
                         echo '</a>';
                         echo '</div>';
