@@ -413,7 +413,7 @@ left: -108px;
 #access .products li a:hover, #access .products li a:focus { 
   text-indent: -5px;
   white-space: nowrap;
-  overflow: auto;
+  overflow: hidden;
   font-size: 1.85em;
   color: #ffcc00;
   background:none;
