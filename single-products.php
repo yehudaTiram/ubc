@@ -19,25 +19,7 @@
 
 						<?php the_content(); ?>
 
-<?php
-						$meta = $product_metabox->the_meta();
-						if ( isset($meta['product_videos'])) { ?>
-						<div class="video">
-						<table id="video">
-							<tr>
-								<th colspan="2">Video</th>
 
-							</tr>
-							<tr>
-								<td colspan="2">
-									<?php echo $meta['product_videos']; ?>
-
-								</td>
-							</tr>
-						</table>
-						</div>
-						<?php
-} // only show geometry section if video value is set ?>
 
 						<?php
 							$meta = $product_metabox->the_meta();
@@ -89,6 +71,26 @@
 						<?php
 } // only show geometry section if video value is set
 ?>
+
+<?php
+						$meta = $product_metabox->the_meta();
+						if ( isset($meta['product_videos'])) { ?>
+						<div class="video">
+						<table id="video">
+							<tr>
+								<th colspan="2">Video</th>
+
+							</tr>
+							<tr>
+								<td colspan="2">
+									<?php echo $meta['product_videos']; ?>
+
+								</td>
+							</tr>
+						</table>
+						</div>
+						<?php
+} // only show geometry section if video value is set ?>
 					</div><!-- .entry-content -->
 
 				</article>

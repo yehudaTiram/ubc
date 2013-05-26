@@ -1806,6 +1806,7 @@ body.video {
 		width: 465px;
 		display:block;
 		float:left;
+    margin-right: 10px;
 }
 
 .single-products .video iframe{
