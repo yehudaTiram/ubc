@@ -983,16 +983,16 @@ a:active img[class*="wp-image-"] {
 #site-credits a,
 #site-credits a:focus { color: #999 }
 #site-credits p { font-size: 10px }
-.menu-footer-container {
+.menu-footer-container, .menu-footer-two-container {
     float: right;
     width: 15%;
     text-align: left;
 }
-.menu-footer-container ul {
+.menu-footer-container ul, .menu-footer-two-container ul {
 	list-style:none;
 	text-transform:uppercase;	
 }
-.menu-footer-container ul a {color: #000;
+.menu-footer-container ul a, .menu-footer-two-container ul a {color: #000;
 }
 
 footer .widget {width: 24%;clear: none; float:left; margin-bottom: 0;
