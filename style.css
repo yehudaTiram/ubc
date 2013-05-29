@@ -1786,6 +1786,11 @@ body.video {
     float: left;
     margin-right: 10px;
 }
+
+.single-products .video {
+  width:950px;
+}
+
 .single-products .geometry { margin-right: 0 }
 .single-products table {
     background: #eaeaea;
@@ -1810,8 +1815,8 @@ body.video {
 }
 
 .single-products .video iframe{
-  width: 425px !important;
-height: 249px  !important;
+  width: 910px !important;
+height: 515px  !important;
 }
 
 .single-products .related-products { clear: both; display: block; width: 100%; }
