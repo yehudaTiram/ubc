@@ -1756,6 +1756,9 @@ div .flexslider:hover .slide-data {
 .flexslider .flex-direction-nav .flex-next {
   background-position: -70px 0;
 }
+.flexslider .flex-direction-nav .flex-next { right:0;}
+.flexslider .flex-direction-nav .flex-prev { left:0;}
+
 
 div .flexslider:hover .flex-next {opacity: 1.0; right: 10%;}
 div .flexslider:hover .flex-prev {opacity: 1.0; left: 10%;}
