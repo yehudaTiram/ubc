@@ -16,7 +16,6 @@
 				</header>
 
 				<?php rewind_posts(); ?>
-				
 				<div id="taxonomy-archive-type">
 					<ul>
 				<?php /* Start the Loop */ ?>
@@ -28,10 +27,6 @@
 
 							
 					</li><!-- #post-<?php the_ID(); ?> -->
-				
-				
-					
-					
 
 				<?php endwhile; ?>
 				</ul>

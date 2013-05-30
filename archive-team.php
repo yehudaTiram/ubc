@@ -9,7 +9,7 @@
 					<h1 class="page-title">Team</h1>
 				</header>
 				
-				<?php $levels = array( "pros", "ams", "world", "vets" );
+				<?php $levels = array( "pros", "world", "family" );
 					foreach ( $levels as $level ) {
 				?>
 
