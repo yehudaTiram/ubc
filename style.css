@@ -65,6 +65,8 @@ Tags: custom-menu, sticky-post, microformats, rtl-language-support, translation-
   padding-right: 1em
 }
 
+aside.instagram a:before {content: ""; padding-right:0;}
+
 /* =Structure
 -------------------------------------------------------------- */
 body { background-color: #fff; }
@@ -2166,6 +2168,8 @@ color:#fff;
 height: 175px;
 overflow:hidden;
 }
+
+
 
 div #masonryContainer, div .masonryItem {
   padding:0;
