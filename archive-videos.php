@@ -8,11 +8,11 @@
 				</header>
 
         <?php
-          $wpvq = array( 'post_type' => 'videos' );
+          $wpvq = array( 'post_type' => 'videos', 'posts_per_page' => -1 );
           $rider_posts = new WP_Query ($wpvq);
           $i = 0;
         ?>
-			          
+
 			  <?php foreach( $rider_posts->posts as $post ) : $i++; ?>
 			   <div class="span-8<?php if ($i == 3) { echo ' last'; } ?>">
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
