@@ -1871,6 +1871,11 @@ height: 515px  !important;
 .teammate:hover h1.entry-title a {
 		color: rgb(253, 193, 35);
 }
+
+#pros, #world, #family {
+  margin-bottom:30px;
+}
+
 .single-team .entry-title { font-size: 18px; }
 ul.bio,
 ul.videos,
