@@ -1585,7 +1585,7 @@ p.comment-form-comment { margin: 0 }
 }
 #hs .pagination li.current a { background-position: 0 -12px }
 
-/* =Team Slideshows
+/* =Product Slideshows
 -------------------------------------------------------------- */
 #ss_wrap {
     width: 950px;
@@ -1684,6 +1684,109 @@ p.comment-form-comment { margin: 0 }
     background: #eaeaea;
 }
 #ss .pagination li a img {
+    width: 50px;
+    height: 50px;
+}
+
+/* =Team Slideshows
+-------------------------------------------------------------- */
+body.single-team #ss_wrap {
+    width: 590px;
+    height: 480px;
+    position: relative;
+}
+/*
+    Slides container
+    Important:
+    Set the width of your slides container
+    Set to display none, prevents content flash
+*/
+body.single-team #ss .slides_container {
+    width: 590px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: none;
+    display: block;
+}
+/*
+    Each slide
+    Important:
+    Set the width of your slides
+    If height not specified height will be set by the slide content
+    Set to display block
+*/
+body.single-team #ss .slides_container a {
+    width: 590px;
+    height: 390px;
+    display: block;
+}
+/*
+    Next/prev buttons
+*/
+body.single-team #ss .next,
+body.single-team #ss .prev {
+    position: absolute;
+    top: 0px;
+    left: -53px;
+    width: 50%;
+    height: 390px;
+    display: block;
+    z-index: 101;
+    text-indent: -999em;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+body.single-team #ss .prev {
+    left: 0;
+    background: url(images/slideshow/arrow-left.png) no-repeat 0 50%;
+}
+body.single-team #ss .prev:hover,
+body.single-team #ss .next:hover {
+    filter: alpha(opacity=1);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+body.single-team #ss .next {
+    left: 295px;
+    background: url(images/slideshow/arrow-right.png) no-repeat 100% 50%;
+}
+/*
+    Pagination
+*/
+body.single-team #ss .pagination {
+    margin: 0 0 40px;
+    padding: 5px 8px;
+    width: 574px;
+    min-height: 63px;
+    display: block;
+    background: url(images/stripe.png) repeat;
+    overflow: hidden;
+}
+body.single-team #ss .pagination li {
+    float: left;
+    margin: 2px 3px;
+    list-style: none;
+}
+body.single-team #ss .pagination li:first-child { margin-left: 0 }
+body.single-team #ss .pagination li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    background: #fff;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    float: left;
+}
+body.single-team #ss .pagination li.current a {
+    border: 1px solid #ccc;
+    background: #eaeaea;
+}
+body.single-team #ss .pagination li a img {
     width: 50px;
     height: 50px;
 }
