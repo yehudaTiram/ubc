@@ -2026,6 +2026,8 @@ ul.videos li a:hover { }
     font-weight: bold;
 }
 
+.single-videos .video {width:620px; float:left;}
+
 /* 2013 Homepage 
 -------------------------------------------------------------- */
 
