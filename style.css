@@ -70,6 +70,8 @@ aside.instagram a:before {content: ""; padding-right:0;}
 /* =Structure
 -------------------------------------------------------------- */
 body { background-color: #fff; }
+
+body.single {background-size: 100% auto !important;background-position: center top !important;}
 #branding {
     position: relative;
     width: 950px;
