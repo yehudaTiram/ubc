@@ -98,7 +98,8 @@
 			<?php endwhile; // end of the loop. ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
-
+<?php get_template_part('social'); ?>
+<?php echo fbcommentbox(''); ?>
 <?php
         if ( 'products' == get_post_type() ) {
             $taxs = wp_get_post_terms( $post->ID, 'type' );
@@ -139,7 +140,6 @@
           }
       }
 ?>
-
 <?php get_footer(); ?>
 
 

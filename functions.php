@@ -20,7 +20,7 @@ function united_theme_setup() {
 	 * to change 'united' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'united', TEMPLATEPATH . '/languages' );
-	
+
 	$locale = get_locale();
 	$locale_file = TEMPLATEPATH . "/languages/$locale.php";
 	if ( is_readable( $locale_file ) )
@@ -29,7 +29,7 @@ function united_theme_setup() {
 	/**
 	 * Set the thumbnail sizes for this theme
 	 */
-	if ( function_exists( 'add_theme_support' ) ) { 
+	if ( function_exists( 'add_theme_support' ) ) {
 		add_theme_support( 'post-thumbnails' );
 		add_image_size( '310x175', 310, 175, true );
 	}
@@ -46,12 +46,12 @@ function united_theme_setup() {
 		'team' => __( 'Team Menu', 'united' ),
 		'products' => __( 'Products Menu', 'united' )
 	) );
-	
+
 	/**
 	 * Add default posts and comments RSS feed links to head
 	 */
 	add_theme_support( 'automatic-feed-links' );
-	
+
 	/**
 	 * Add support for custom backgrounds
 	 */
@@ -72,7 +72,7 @@ require_once ($includes_path . 'scripts.php');
  * Load Javascripts
  */
 require_once ($includes_path . 'attachments.php');
-	
+
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  */
@@ -103,8 +103,8 @@ function united_widgets_init() {
 		'after_widget' => "</aside>",
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
-	) );	
-	
+	) );
+
 	register_sidebar( array (
 		'name' => __( 'Footer Widget', 'united' ),
 		'id' => 'footer-widget-1',
@@ -122,7 +122,7 @@ function united_widgets_init() {
 		'before_widget' => '<div id="%1$s" class="widget %2$s instagram-widget">',
 		'after_widget' => "</div>"
 	) );
-	
+
 }
 add_action( 'widgets_init', 'united_widgets_init' );
 
@@ -256,7 +256,7 @@ add_action('admin_head', 'united_custom_admin_css');
 function united_social_buttons_below($content) {
 	$permalink = get_permalink($post->ID);
 	$title = get_the_title();
-	if(!is_feed() && !is_home() && !is_page()) {
+	if(!is_feed() && !is_home() && !is_page()  && 'products' != get_post_type() ) {
 		$content = $content . '<div class="social-links">
 	<a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-url="'.$permalink.'" data-text="'.$title.'">Tweet</a>
 	<div id="fb-root"></div><fb:like href="'.$permalink.'" layout="button_count" width="100" show_faces="false" font=""></fb:like>
@@ -293,8 +293,14 @@ add_filter('flexslider_hg_rotators', 'set_flexslider_hg_rotators');
 
 /* Add Image Sizes for homepage */
 
-if ( function_exists( 'add_image_size' ) ) { 
+if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'homepage-rotator', '1800', '900', true );
 	add_image_size( 'hp-large', 470, 510, true );
-	add_image_size( 'hp-med', 470, 250, true ); 
+	add_image_size( 'hp-med', 470, 250, true );
+}
+add_action( 'wp_head', 'fix_fb_comment_placement' );
+function fix_fb_comment_placement() {
+  if ('products'== get_post_type()) {
+    remove_filter('the_content', 'fbcommentbox', 100);
+  }
 }

@@ -1926,8 +1926,8 @@ body.video {
 }
 
 .single-products .video iframe{
-  width: 910px !important;
-height: 515px  !important;
+    width: 910px !important;
+    height: 515px  !important;
 }
 
 .single-products .related-products { clear: both; display: block; width: 100%; }
@@ -1937,6 +1937,12 @@ height: 515px  !important;
 .single-products .related-products a:hover span { color: rgb(253, 193, 35); }
 .single-products .related-products img{ width: 100%; height: auto; border: 1px solid black }
 .single-products .related-products h3 {background:none; border:0; font-weight: bold; font-size:1.8em; margin-bottom:5px;}
+
+.single-products #main h3,
+.single-products #main p {
+    clear: both;
+}
+
 
 
 
