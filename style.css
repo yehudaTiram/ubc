@@ -2362,6 +2362,11 @@ footer .facebook-like-box{
   margin-top:20px;
 }
 
+/* Shop/Map Listing Page */
+
+.page div.result h3 {
+  line-height: 2.2
+}
 
 /* New Product Categories Page */
 
