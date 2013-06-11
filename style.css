@@ -1893,20 +1893,10 @@ body.video {
 .single-products .specs,
 .single-products .geometry,
 .single-products .video {
-    width: 465px;
+    width: 950px;
     float: left;
-    margin-right: 10px;
 }
 
-.single-products .specs{
-  width: 950px;
-}
-
-
-
-.single-products .video {
-  width:950px;
-}
 
 .single-products .geometry { margin-right: 0 }
 .single-products table {
