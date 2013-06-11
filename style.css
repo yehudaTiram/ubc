@@ -1893,10 +1893,20 @@ body.video {
 .single-products .specs,
 .single-products .geometry,
 .single-products .video {
-    width: 950px;
+    width: 465px;
     float: left;
+    margin-right: 10px;
 }
 
+.single-products .specs{
+  width: 950px;
+}
+
+
+
+.single-products .video {
+  width:950px;
+}
 
 .single-products .geometry { margin-right: 0 }
 .single-products table {
@@ -1921,10 +1931,8 @@ body.video {
     margin-right: 10px;
 }
 
-.single-products .complete-bikes .geometry,
 .single-products .frames .specs,
-.single-products .bars .specs{
-
+.single-products .bars .specs {
   width: 465px;
 }
 
